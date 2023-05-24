@@ -1,0 +1,45 @@
+@font-face {
+  font-family: ;
+  src: url();
+}
+
+:root {
+  --var1: ;
+  --var2: ;
+  --var3: ;
+}
+
+/* GLOBAL SETTINGS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* HEADER  */
+#minuteCountdownBereich {
+  background-color: #dcffcc;
+  color: #baabda;
+  display: inline-block;
+  padding: 10px;
+  font-family: Geneva;
+  font-weight: bold;
+}
+
+input {
+  border-radius: 5px;
+  background: #9fdfcd;
+}
+
+button {
+  border-radius: 5px;
+  background: #d79abc;
+}
