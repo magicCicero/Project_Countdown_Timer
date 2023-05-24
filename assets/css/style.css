@@ -24,22 +24,180 @@ img {
   max-width: 100%;
 }
 
-/* HEADER  */
-#minuteCountdownBereich {
-  background-color: #dcffcc;
-  color: #baabda;
-  display: inline-block;
-  padding: 10px;
-  font-family: Geneva;
-  font-weight: bold;
+button:first-of-type {
+  background-color: red;
+  text-shadow: 0px 0px 10px black;
 }
 
-input {
+button,
+input[type="submit"] {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 5px;
+  border: none;
   border-radius: 5px;
-  background: #9fdfcd;
+  background-color: #bbb;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+button:hover {
+  background-color: #f33535;
+}
+
+input[type="submit"] {
+  background-color: #211a4c;
+}
+
+input[type="submit"]:hover {
+  background-color: #8200ff;
+}
+
+input[type="text"] {
+  margin-bottom: 30px;
+  padding: 0;
+  font-size: 1em;
+  width: 100%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #222;
+}
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  background: linear-gradient(to bottom right, #211a4c, #8200ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  transition: 500ms all ease-in-out;
+  position: relative;
+}
+
+#divcontainer {
+  position: absolute;
+  left: -101%;
+  height: 100vh;
+  width: 101vw;
+  background-color: #f33535;
+  display: none;
+}
+.bubble {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #c7e0f4;
+  opacity: 0.7;
+  animation-name: bubbleAnimation;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bubbleAnimation {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-200px) scale(0.5);
+  }
+  100% {
+    transform: translateY(-400px) scale(1);
+  }
+}
+
+/* Header Styles */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#minuteCountdownBereich {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  max-width: 400px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 22;
+}
+
+p {
+  font-family: Geneva, sans-serif;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+#time {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  color: black;
+  font-weight: 900;
+}
+
+input[type="text"] {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 1em;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  border-bottom: 2px solid #222;
 }
 
 button {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: none;
   border-radius: 5px;
-  background: #d79abc;
+  background-color: #bbb;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+button:hover {
+  background-color: #f33535;
+}
+
+input[type="submit"] {
+  background-color: #211a4c;
+}
+
+input[type="submit"]:hover {
+  background-color: #8200ff;
+}
+
+/* Navigation Styles */
+nav {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Main Styles */
+main {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
 }

@@ -7,14 +7,18 @@
     <title>Countdown</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body>
+  <body id="body">
+    <div id="divcontainer"></div>
+    <!-- <img id="img" src="./assets/img/pngwing.com.png" alt="" /> -->
     <header>
-      <div id="minuteCountdownBereich">
+      <div id="minuteCountdownBereich" onload="bodyLoad()">
         <p>Minuten Countdown:</p>
         <div id="time">00:00</div>
         <input id="minutes" type="text" placeholder=" Minuten übrig..." />
         <br />
-        <button onclick="startMinCountdown();">Start Countdown</button>
+        <button id="startbtn" onclick="startMinCountdown();">
+          Start Countdown
+        </button>
         <br />
         <button onclick="pauseMinCountdown()">Pause Countdown</button>
         <br />
